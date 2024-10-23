@@ -1,5 +1,3 @@
-дороблю 23.10
-
 // Функція отримує масив товарів і повертає всі товари, які мають ціну нижчу за 100 або вищу за 500
 "ВИКОРИСТОВУВАТИ ЛИШЕ МЕТОДИ МАСИВІВ filter, map, sort та інші, які є в файлі methods.js."
 
@@ -14,7 +12,7 @@ const products = [
 ];
 
 function getProductsNotInPriceRange(products) {
-  // Ваш код
+  return products.filter(product => product.price < 100 || product.price > 500);
 }
 
 console.log(getProductsNotInPriceRange(products));
